@@ -9,3 +9,7 @@
 1711392047754: ::1: POST: /api/users
 1711392078952: ::1: POST: /api/users
 1711392082683: ::1: POST: /api/users
+1711392495260: ::1: POST: /api/users
+1711392505639: ::1: POST: /api/users
+1711392514813: ::1: GET: /api/users
+1711392520976: ::1: GET: /api/users/10000
