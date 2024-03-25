@@ -5,9 +5,16 @@ const app = express();
 
 const PORT = 8000;
 
-//Middleware
+//Middleware-Plugin
 
 app.use(express.urlencoded({extended: false}));
+
+app.use((req,res,next)=>{
+  fs.appendFile("log.txt", `${Date.now()}: ${req.method}: ${req.path}`,(err,data)=>{
+    next();
+
+  });
+});
 
 // ROUTES
 
